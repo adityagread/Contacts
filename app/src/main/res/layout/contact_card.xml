@@ -1,0 +1,59 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/green"
+    app:cardCornerRadius="50dp">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/contact_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/orange"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:srcCompat="@drawable/ic_person"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/contact_image"
+            android:background="@drawable/card_text_background"
+            android:padding="10dp"
+            tools:ignore="NotSibling">
+
+            <TextView
+                android:id="@+id/contact_name"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:text="Aditya Gread"
+                android:textColor="?android:textColorSecondary" />
+
+            <TextView
+                android:id="@+id/contact_position"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_name"
+                android:layout_marginLeft="30dp"
+                android:padding="8dp"
+                android:text="Left Wing"
+                android:textColor="?android:textColorSecondary" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
