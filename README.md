@@ -12,4 +12,5 @@ Main screen when app opens
 
 
 Screen after item clicked on recycler view
+
 ![WhatsApp Image 2021-09-02 at 12 53 09 AM (1) - Copy](https://user-images.githubusercontent.com/62156095/131732305-9ed7a7d3-7ac0-4f78-8eaa-fbd3d70cbdb7.jpeg)
